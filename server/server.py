@@ -56,9 +56,9 @@ def start_websocket(websocket, path):
 
 
 if __name__ == '__main__':
-        if sys.argv[1]:
-           file_path =  sys.argv[1]   
-        print('initializeing and starting websocket server')
-        start_server = websockets.serve(start_websocket, '0.0.0.0', 8778)
-        asyncio.get_event_loop().run_until_complete(start_server)
-        asyncio.get_event_loop().run_forever()
+    if sys.argv[1]:
+        file_path =  sys.argv[1]   
+    print('initializeing and starting websocket server')
+    start_server = websockets.serve(start_websocket, '0.0.0.0', 8778)
+    asyncio.get_event_loop().run_until_complete(start_server)
+    asyncio.get_event_loop().run_forever()
